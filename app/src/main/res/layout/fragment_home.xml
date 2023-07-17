@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <!-- Nav Layout -->
+        <LinearLayout
+            android:id="@+id/navLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harap login terlebih dahulu"
+                android:layout_marginLeft="16dp" />
+        </LinearLayout>
+
+        <!-- ImageView -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+     <ImageView
+
+                android:id="@+id/b0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/b0" />
+        </RelativeLayout>
+
+        <!-- Relative Layout - Row 1 -->
+        <LinearLayout
+            android:background="@drawable/rounded_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/b1" />
+
+            <Button
+                android:id="@+id/btn2"
+          android:layout_width="50dp"
+                android:layout_height="50dp"
+android:layout_margin="@dimen/_15sdp"
+                android:layout_toRightOf="@id/btn1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/b2" />
+
+            <Button
+                android:id="@+id/btn3"
+           android:layout_width="50dp"
+                android:layout_height="50dp"
+android:layout_margin="@dimen/_15sdp"
+                android:layout_toRightOf="@id/btn2"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/b3" />
+
+            <Button
+                android:id="@+id/btn4"
+           android:layout_width="50dp"
+                android:layout_height="50dp"
+android:layout_margin="@dimen/_15sdp"
+                android:layout_toRightOf="@id/btn3"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/b4" />
+        </RelativeLayout>
+
+        <!-- Relative Layout - Row 2 -->
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn5"
+           android:layout_width="50dp"
+                android:layout_height="50dp"
+android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/b5" />
+
+            <Button
+                android:id="@+id/btn6"
+           android:layout_width="50dp"
+                android:layout_height="50dp"
+android:layout_margin="@dimen/_15sdp"
+                android:layout_toRightOf="@id/btn5"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/b6" />
+
+            <Button
+
+                android:id="@+id/btn7"
+           android:layout_width="50dp"
+                android:layout_height="50dp"
+android:layout_margin="@dimen/_15sdp"
+                android:layout_toRightOf="@id/btn6"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/b7" />
+
+            <Button
+                android:id="@+id/btn8"
+           android:layout_width="50dp"
+                android:layout_height="50dp"
+android:layout_margin="@dimen/_15sdp"
+                android:layout_toRightOf="@id/btn7"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/b8" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Kotak Kiri -->
+                <RelativeLayout
+                    android:id="@+id/leftBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+             <ImageView
+
+                        android:id="@+id/p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image1" />
+                </RelativeLayout>
+
+                <!-- Kotak Kanan -->
+                <RelativeLayout
+                    android:id="@+id/rightBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/leftBox"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+             <ImageView
+
+                        android:id="@+id/p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image2" />
+                </RelativeLayout>
+
+                <!-- Kotak di Bawah Kotak Kanan -->
+                <RelativeLayout
+                    android:id="@+id/bottomBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/rightBox"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+             <ImageView
+
+                        android:id="@+id/p3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image3" />
+                </RelativeLayout>
+
+                <!-- Kotak di Bawah Kotak di Bawah -->
+
+                <!-- Kotak di Bawah Kotak di Bawah -->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

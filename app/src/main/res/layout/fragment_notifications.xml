@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Berita 1 -->
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Gambar Berita 1 -->
+     <ImageView
+      android:tint="@color/purple_500"
+                android:id="@+id/imageBerita1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/b6" />
+
+            <!-- Deskripsi Berita 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/titleBerita1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Berita 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentBerita1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi singkat mengenai berita 1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Berita 2 -->
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_square"            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Gambar Berita 2 -->
+           <ImageView
+               android:tint="@color/purple_500"
+                android:id="@+id/imageBerita2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/b7" />
+
+            <!-- Deskripsi Berita 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/titleBerita2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Berita 2"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentBerita2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi singkat mengenai berita 2" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Berita 3 -->
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Gambar Berita 3 -->
+           <ImageView
+                android:tint="@color/purple_500"
+                android:id="@+id/imageBerita3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/b8" />
+
+            <!-- Deskripsi Berita 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/titleBerita3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Berita 3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentBerita3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi singkat mengenai berita 3" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Tambahkan berita lainnya sesuai kebutuhan -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
